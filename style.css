@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff90bb;
+}
+
+h1 {
+  font-size: 3rem;
+
+  color: #333;
+}
+
+.container {
+  background-color: #ffc1da;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vh;
+}
+
+#amount {
+  margin-top: 1rem;
+}
+
+from {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+form input {
+  border: 1px solid #8accd5;
+  background-color: #f8f8e1;
+  font-size: 1rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(235, 221, 221);
+  justify-content: space-between;
+  width: 6rem;
+}
+
+.select-container select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+#msg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+form button {
+  background-color: #8accd5;
+  color: #f8f8e1;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 
+// const URL =
+//   "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+
+const dropdowns = document.querySelectorAll("select"); // Corrected selector to get both select elements
+for (let select of dropdowns) { // Changed for...in to for...of
+  for (code in countryList) {
+    let newOption = document.createElement("option");
+    newOption.innerHTML = code;
+    newOption.value = code;
+    if (code == "USD") {
+      newOption.selected = true;
+    }
+    select.append(newOption); // Now it's correct because select is a DOM element
+  }
+}
+
+// Removed the following since it is not doing anything
+// const dropdowns1 = document.querySelector("#selects1"); */
